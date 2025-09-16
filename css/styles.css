@@ -59,6 +59,21 @@ h2 {
   margin-bottom: 16px;
 }
 
+.schedule {
+  max-width: 900px;
+  margin: 32px auto;  
+}
+
+table {
+  margin: 15px auto;  
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: center;
+}
 
 footer {
   background-color: #333333;
