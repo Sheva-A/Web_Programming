@@ -3,6 +3,9 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -12,7 +15,7 @@ ul {
 }
 
 header {
-  background-color: #1b998b; 
+  background-color: #1b998b;
   color: #fcfaf9;
   text-align: center;
   padding: 32px 16px;
@@ -24,7 +27,7 @@ header h1 {
 }
 
 nav {
-  background-color: #333333;
+  background-color: #333;
 }
 
 nav ul {
@@ -36,7 +39,7 @@ nav a {
   display: block;
   padding: 16px 24px;
   color: #fcfaf9;
-  text-decoration: none
+  text-decoration: none;
 }
 
 nav a:hover {
@@ -44,10 +47,11 @@ nav a:hover {
 }
 
 main {
-  color: #333333;
+  color: #333;
   padding: 32px;
   max-width: 900px;
-  margin: auto;
+  margin: 0;
+  flex: 1;
 }
 
 section {
@@ -61,11 +65,11 @@ h2 {
 
 .schedule {
   max-width: 900px;
-  margin: 32px auto;  
+  margin: 32px auto;
 }
 
 table {
-  margin: 15px auto;  
+  margin: 15px auto;
   border-collapse: collapse;
 }
 
@@ -76,7 +80,7 @@ th, td {
 }
 
 footer {
-  background-color: #333333;
+  background-color: #333;
   color: #fcfaf9;
   padding: 24px;
   text-align: center;
