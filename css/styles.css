@@ -1,29 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  background-color: #fcfaf9;
   margin: 0;
   padding: 0;
+  line-height: 1.6;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-header {
+header{
   background-color: #1b998b;
   color: #fcfaf9;
+  padding: 15px 20px;
   text-align: center;
-  padding: 32px 16px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 29px;
 }
 
 nav {
@@ -35,9 +25,14 @@ nav ul {
   justify-content: center;
 }
 
+nav li {
+  display: inline-block;
+  margin: 0, 15px;
+}
+
 nav a {
   display: block;
-  padding: 16px 24px;
+  padding: 14px 20px;
   color: #fcfaf9;
   text-decoration: none;
 }
@@ -50,107 +45,44 @@ main {
   color: #333;
   padding: 32px;
   max-width: 900px;
-  margin: 0; 
-  flex: 1;
+  margin: 0;
+  flex: 1
 }
 
-section {
-  margin-bottom: 32px;
-}
-
-h2 {
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-}
-
-.schedule {
-  max-width: 900px;
-  margin: 32px auto;
-}
-
-table {
-  margin: 15px auto;
-  border-collapse: collapse;
-}
-
-th, td {
-  border: 1px solid #444;
-  padding: 8px;
-  text-align: center;
-}
-
-form {
-  background: #fff;
-  padding: 20px 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  max-width: 400px;
-  width: 100%;
-}
-
-label {
-  display: block;
-  margin: 4px 0 2px; 
-  font-weight: bold;
-}
-
-input, select {
-  width: 100%;
-  padding: 6px; 
-  margin-bottom: 8px; 
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  width: auto;
-  margin-right: 6px;
-}
-
-.inline-option {
-  display: flex;
-  align-items: center;
-  gap: 6px; 
-  margin-bottom: 2px; 
-}
-
-.inline-option label {
-  font-weight: normal;
-}
-
-.submit-btn {
-  background-color: #1b998b;
-  color: #fcfaf9;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  width: 100%;
-}
-
-.submit-btn:hover {
-  background-color: #148075;
-}
-
-footer {
-  background-color: #333;
-  color: #fcfaf9;
-  padding: 24px;
-  text-align: center;
-}
-
-footer a {
+a {
   color: #1b998b;
   text-decoration: none;
 }
 
-footer a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-footer li {
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 15px auto;
+}
+
+th, td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+
+footer{
+  background-color: #333;
+  color: #fcfaf9;
+  text-align: center;
+  padding: 24px;
+}
+
+footer li{
   display: inline;
   margin: 0 8px;
 }
