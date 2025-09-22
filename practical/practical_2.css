@@ -1,0 +1,49 @@
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1b998b;
+}
+
+form label {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #1b998b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #fcfaf9;
+    color: #333333;
+}
+
+.inline-option {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.inline-option input {
+    margin-right: 8px;
+}
+
+.submit-btn {
+    background-color: #1b998b;
+    color: #fcfaf9;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #14796d;
+}
