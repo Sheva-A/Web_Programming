@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    background-color: aqua;
+}
+
+.topbar-left{
+    width: 200px; 
+    height: 40px; 
+    background-color: bisque; 
+}
+
+.topbar-center{
+    flex-grow: 1;
+    height: 40px; 
+    background-color: chartreuse; 
+}
+
+.topbar-right{
+    width: 200px; 
+    height: 40px; 
+    background-color: darkblue; 
+}
+
+.page{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar-left{
+    height: 100%;
+    min-width: 200px; 
+    background-color: fuchsia; 
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-left > nav{
+    flex-grow: 1;
+}
+
+.sidebar-menu{
+    background-color: purple;
+}
+
+.sidebar-you{
+    background-color: hotpink;
+}
+
+.sidebar-subscriptions{
+    background-color: lightcoral;
+}
+
+.content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-topbar{
+    height: 56px;
+    background-color: royalblue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.content-topbar > div{
+    width: 56px; 
+    height: 40px;
+    background-color: lightgreen;
+    margin: 10px;
+}
+
+.video-grid{
+    flex-grow: 1;
+    display: flex;             
+    flex-wrap: wrap;           
+    justify-content: space-around; 
+    background-color: lightpink;
+    padding: 10px;
+}
+
+.video-card{
+    width: 300px; 
+    height: 200px; 
+    background-color: lightgray;
+    margin: 10px;
+}
