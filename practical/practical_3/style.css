@@ -10,25 +10,23 @@ body {
     display: flex;
     align-items: center;
     height: 56px;
-    background-color: aqua;
 }
 
 .topbar-left{
     width: 200px; 
     height: 40px; 
-    background-color: bisque; 
+    padding: 10px;
 }
 
 .topbar-center{
     flex-grow: 1;
     height: 40px; 
-    background-color: chartreuse; 
+    padding: 10px;
 }
 
 .topbar-right{
     width: 200px; 
     height: 40px; 
-    background-color: darkblue; 
 }
 
 .page{
@@ -39,25 +37,13 @@ body {
 .sidebar-left{
     height: 100%;
     min-width: 200px; 
-    background-color: fuchsia; 
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 
 .sidebar-left > nav{
     flex-grow: 1;
-}
-
-.sidebar-menu{
-    background-color: purple;
-}
-
-.sidebar-you{
-    background-color: hotpink;
-}
-
-.sidebar-subscriptions{
-    background-color: lightcoral;
 }
 
 .content{
@@ -68,7 +54,6 @@ body {
 
 .content-topbar{
     height: 56px;
-    background-color: royalblue;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -78,7 +63,6 @@ body {
 .content-topbar > div{
     width: 56px; 
     height: 40px;
-    background-color: lightgreen;
     margin: 10px;
 }
 
@@ -87,13 +71,21 @@ body {
     display: flex;             
     flex-wrap: wrap;           
     justify-content: space-around; 
-    background-color: lightpink;
     padding: 10px;
 }
 
-.video-card{
+.video-img{
     width: 300px; 
     height: 200px; 
-    background-color: lightgray;
     margin: 10px;
+    background-color: grey;
+}
+
+.video-card > h3{
+    padding: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+    width: 300px;
 }
