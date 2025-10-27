@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background: #222222;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #eeeeee;
+    font-size: 12px;
+}
+
+.keypad-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 20px;
+    padding: 24px;
+    background: #333333;
+    border-radius: 6px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    width: max-content;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.key-row {
+    display: flex;
+    gap: 4px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4a4a4a;
+    color: #eeeeee;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 #2a2a2a;
+    height: 44px;
+    min-width: 44px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    position: relative;
+}
+
+.button:hover {
+    background: #555555;
+}
+
+.button:active {
+    background: #404040;
+    transform: translateY(1px);
+    box-shadow: 0 1px 0 #2a2a2a;
+}
+
+.back,
+.tab,
+.caps {
+    width: 96px;
+}
+
+.ctrl,
+.win,
+.alt,
+.fn,
+.menu {
+    width: 56px;
+}
+
+.return { width: 92px; }
+.l-shift { width: 108px; }
+.r-shift { width: 128px; }
+.spacebar { width: 300px; }
+
+.small-text { font-size: 9px; }
+
+.spacer { width: 29px; }
+
+.nav-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.arrow-pad {
+    margin-top: 42px;
+    display: grid;
+    grid-template-areas:
+        ". up ."
+        "left down right";
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow.arrow-up { grid-area: up; }
+.arrow.arrow-left { grid-area: left; }
+.arrow.arrow-down { grid-area: down; }
+.arrow.arrow-right { grid-area: right; }
+
+.number-pad {
+    display: grid;
+    grid-template-columns: repeat(4, 44px);
+    grid-template-rows: repeat(5, 44px);
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.number-pad .add {
+    grid-row: span 2;
+    height: 92px;
+}
+
+.number-pad .return {
+    grid-column: 4;
+    grid-row: 4 / span 2;
+    height: 92px;
+    width: 44px;
+}
+
+.number-pad .num-zero {
+    grid-column: span 2;
+}
