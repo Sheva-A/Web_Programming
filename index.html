@@ -2,42 +2,82 @@
 <html lang="uk">
 <head>
   <meta charset="utf-8">
-  <title>Особистий веб-сайт Анни Шевченко</title>
+  <title>Shevchenko Anna</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
-    <h1>Особистий веб-сайт Шевченко Анни</h1>
-  </header>
-
-  <nav>
+    <nav>
         <ul>
-            <li><a href="index.html">Головна</a></li>
-            <li><a href="about.html">Про мене</a></li>
             <li><a href="practical/practical.html">Практичні роботи</a></li>
             <li><a href="laboratory/laboratory.html">Лабораторні заняття</a></li>
+            <li><a href="index.html">Контакти</a></li>
         </ul>
     </nav>
+  </header>
 
   <main>
-    <section>
-        <h2>Головна сторінка</h2>
-        <p>Це головна сторінка</p>
+    <section class="profile">
+      <div class="profile-info">
+        <h1>Hi, I am Anna, Student</h1>
+        <p>Шевченко Анна. Студентка ТЦР-21. На цьому вебсайті зібрані практичні та лабораторні роботи з предмету "WEB-технології та WEB-дизайн".</p>
+        <button class="btn-resume">Завантажити резюме</button>
+      </div>
+      <div class="profile-photo">
+        <img src="img/profile_photo.jpg" alt="Profile photo">
+      </div>
+    </section>
+
+    <section class="laboratory-works">
+      <div class="section-header">
+        <h2>Лабораторні роботи</h2>
+        <a href="laboratory/laboratory.html" class="view-all">Переглянути всі</a>
+      </div>
+      <div class="laboratory-cards">
+        <article class="laboratory-card">
+          <h3><a href="laboratory/laboratory_1/laboratory_1.html">Лабораторна робота №1</a></h3>
+          <span>Вересень 2024</span>
+          <p>Основи HTML</p>
+        </article>
+        <article class="laboratory-card">
+          <h3><a href="laboratory/laboratory_2/laboratory_2.html">Лабораторна робота №2</a></h3>
+          <span>Жовтень 2024</span>
+          <p>Основи CSS</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="practical-works">
+      <div class="section-header">
+        <h2>Практичні роботи</h2>
+      </div>
+      <div class="practical-cards">
+        <article class="practical-card">
+          <img src="img/ProgrammingIllustration.png" alt="Programming Illustration">
+          <div class="practical-cards-text">
+            <h3><a href="practical/practical_1/practical_1.html">Практична робота №1</a></h3>
+            <span>2025</span>
+            <p>Основи HTML</p>
+          </div>
+        </article>
+        <article class="practical-card">
+          <img src="img/ProgrammingIllustration.png" alt="Programming Illustration">
+          <div class="practical-cards-text">
+            <h3><a href="laboratory/laboratory_2/laboratory_2.html">Практична робота №2</a></h3>
+            <span>2025</span>
+            <p>Основи CSS</p>
+          </div>
+        </article>
     </section>
   </main>
 
   <footer>
-    <h3>Контакти</h3>
-    <p>Email: <a href="mailto:av.shev03@gmail.com">av.shev03@gmail.com</a></p>
-    <p>Телефон: +380-99-102-0280</p>
-
-    <h3>Соціальні мережі</h3>
-    <ul>
-      <li><a href="https://github.com/Sheva-A">GitHub</a></li>
-      <li><a href="https://t.me/sheva_aa">Telegram</a></li>
-    </ul>
-
-    <p>Роки навчання: 2025 — 2029</p>
+    <p>
+      <a href="mailto:av.shev03@gmail.com">av.shev03@gmail.com</a> |
+      <a href="https://github.com/Sheva-A">GitHub</a> |
+      ©2025
+    </p>
   </footer>
 </body>
 </html>
