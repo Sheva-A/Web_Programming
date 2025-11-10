@@ -1,13 +1,15 @@
 body{
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 40px;
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
   color: #21243D;
   width: 100%;
   max-width: 1100px;
-  padding: 0 40px;
-  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 header {
@@ -16,6 +18,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+main{
+  flex-grow: 1;
 }
 
 nav ul {
@@ -215,7 +221,7 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 60px;
-  font-size: 14px;;
+  font-size: 14px;
 }
 
 footer a {
@@ -224,5 +230,23 @@ footer a {
 }
 
 footer a:hover {
+  color: #FF6464;
+}
+
+.work-list ul{
+  list-style: none;
+  padding: 0;
+}
+
+.work-list li{
+  margin-bottom: 6px;
+}
+
+.work-list a{
+  text-decoration: none;
+  color: #21243D;
+}
+
+.work-list a:hover{
   color: #FF6464;
 }
