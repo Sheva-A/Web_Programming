@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background:#ffffff;
+}
+
+.scene {
+    width: 800px;
+    height: 350px;
+    position: relative;
+    overflow: hidden; 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+    background: linear-gradient(
+        180deg, 
+        #87ceeb 0%, 
+        #2b90b9 70%, 
+        #1c5636 70%, 
+        #2e8b57 100%
+    );
+}
+
+.pokemon {
+    position: absolute; 
+    width: 160px; 
+    height: 140px; 
+    bottom: 28%; 
+    
+    background-image: var(--pikachu-gif);
+    
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    animation: walk-across 5s linear infinite;
+}
+
+@keyframes walk-across {
+    0% {
+        left: -20%;
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+
+.cloud {
+    position: absolute;
+    width: 120px; 
+    height: 35px; 
+    background: #ffffff;
+    border-radius: 20px;
+    top: 10%;
+    opacity: 0.85; 
+    
+    animation: move-cloud 15s linear infinite;
+}
+
+.cloud::before, .cloud::after {
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    border-radius: 50%; 
+}
+
+.cloud::before {
+    width: 45px;
+    height: 45px;
+    top: -20px; 
+    left: 15px;
+}
+
+.cloud::after {
+    width: 65px;
+    height: 65px;
+    top: -30px; 
+    right: 10px;
+}
+
+.cloud-1 {
+    top: 15%;
+    transform: scale(0.8); 
+    animation-delay: -3s; 
+}
+
+.cloud-2 {
+    top: 5%;
+    transform: scale(1.1); 
+    animation-duration: 20s; 
+    animation-delay: -10s;
+}
+
+.cloud-3 {
+    top: 22%;
+    transform: scale(0.6); 
+    animation-duration: 12s; 
+    animation-delay: 0s;
+}
+
+@keyframes move-cloud {
+    0% { left: -150px; } 
+    100% { left: 100%; } 
+}
